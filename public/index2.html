@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<head>
+    <title>Facial Payment</title> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;">    
+</head>
+<body>
+    <div id="navbar"> 
+            <h1>Bobs Online Marketplace</h1>
+            <h2>Seamless Order Experience - part 3</h2>
+    </div>
+    <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">STORE</a></li>
+                    <li><a href="index.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="brand-name brand-name-large">Bobs Online Marketplace</h1>
+        </header>
+    <div style="width:800px; margin:0 auto; padding-top: 10px;">
+        <video class="part2" id="player" autoplay width="640" height="480"  ></video>
+    </div>
+    <div style="width:800px; margin:0 auto;">
+        <button id="capturebutton" onclick="capButton()">Capture</button>
+        <form id='uploadForm' action='http://127.0.0.1:8081/upload' method='POST'>
+            <input id="fileInput" type="text" name="fileData"/>  
+          <input id="capturebutton" type="submit" value="Upload!"s/>
+      </form>    
+    </div> 
+    <div style="width:800px; margin:0 auto;">
+        <canvas class="part2" id="canvas" width=160 height="120"></canvas>  
+                      
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
